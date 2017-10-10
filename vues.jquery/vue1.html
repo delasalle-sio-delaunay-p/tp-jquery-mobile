@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>	
+		<title>DLS - BTS Informatique - Anciens élèves</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="page_principale">
+			<div data-role="header" data-theme="a">
+				<h4>BTS SIO</h4>
+				<a href="#" data-ajax="false" data-transition="flip">Retour menu</a>
+			</div>
+		
+			<div data-role="content">
+				<h4>Afficher un message avec un lien hypertexte</h4>
+				<p><a href="#affichage_message_information" data-role="button" data-transition="flip">
+				Afficher une information</a></p>
+				<p><a href="#affichage_message_avertissement" data-role="button" data-transition="flip">
+				Afficher un avertissement</a></p>			
+			
+				<h4>Afficher un message avec un bouton et un script</h4>
+				<button id="btnInformation">Afficher une information</button>
+				<button id="btnAvertissement">Afficher un avertissement</button>
+			</div>
+		
+			<div data-role="footer" data-position="fixed" data-theme="a">
+				<h4>Annuaire des anciens du BTS Informatique<br>Lycée De La Salle (Rennes)</h4>
+			</div>
+			
+			<div data-role="dialog" id="affichage_message_information" data-close-btn="none">
+				<div data-role="header" data-theme="a">
+					<h3>Information...</h3>
+				</div>
+				<div data-role="content">
+					<p style="text-align: center;"><img src="../images/information.png" class="image" /></p>
+					<p style="text-align: center;">Ceci est un message d'information</p>
+				</div>
+				<div data-role="footer" class="ui-bar" data-theme="a">
+					<a href="#page_principale" data-transition="flip">Fermer</a>
+				</div>
+			</div>
+
+
+			<div data-role="dialog" id="affichage_message_avertissement" data-close-btn="none">
+				<div data-role="header" data-theme="a">
+					<h3>Avertissement...</h3>
+				</div>
+				<div data-role="content">
+					<p style="text-align: center;"><img src="../images/avertissement.png" class="image" /></p>
+					<p style="text-align: center;">Ceci est un message d'avertissement</p>
+				</div>
+				<div data-role="footer" class="ui-bar" data-theme="a">
+					<a href="#page_principale" data-transition="flip">Fermer</a>
+				</div>
+			</div>			
+			
+		</div>
+	</body>
+</html>
